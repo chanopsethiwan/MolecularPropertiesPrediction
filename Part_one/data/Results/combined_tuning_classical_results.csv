@@ -1,0 +1,25 @@
+Target,Model,Best ROC-AUC,C,class_weight,dual,fit_intercept,intercept_scaling,l1_ratio,max_iter,multi_class,n_jobs,penalty,random_state,solver,tol,verbose,warm_start,break_ties,cache_size,coef0,decision_function_shape,degree,gamma,kernel,probability,shrinking
+NR-AR,LogisticRegression,0.7971931543776047,0.008260808399079602,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-AR-LBD,LogisticRegression,0.8516843851620536,0.011526449540315611,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-AhR,LogisticRegression,0.8802950844500043,0.03320559103751957,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-Aromatase,LogisticRegression,0.8199410510685112,0.011526449540315611,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-ER,LogisticRegression,0.7186460477566777,0.008260808399079602,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-ER-LBD,LogisticRegression,0.7913802816901409,0.028585493941961904,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-PPAR-gamma,LogisticRegression,0.7758668471725156,0.011526449540315611,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+SR-ARE,LogisticRegression,0.7652968836827287,0.03320559103751957,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+SR-ATAD5,LogisticRegression,0.8213612946577544,0.028585493941961904,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+SR-HSE,LogisticRegression,0.7450559737884614,0.028585493941961904,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+SR-MMP,LogisticRegression,0.8638968189432698,0.07459343285726545,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+SR-p53,LogisticRegression,0.8090428827028197,0.028585493941961904,balanced,False,True,1.0,,1000,auto,,l2,,lbfgs,0.0001,0,False,,,,,,,,,
+NR-AR,SVM,0.8022986704531607,0.16480446427978965,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.012561043700013555,rbf,True,True
+NR-AR-LBD,SVM,0.874323592259235,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+NR-AhR,SVM,0.8921584116658092,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+NR-Aromatase,SVM,0.8245975647528825,0.16480446427978965,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.012561043700013555,rbf,True,True
+NR-ER,SVM,0.7219578397078663,0.16480446427978965,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.012561043700013555,rbf,True,True
+NR-ER-LBD,SVM,0.8049097548252477,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+NR-PPAR-gamma,SVM,0.8264981219588681,72.86653737491037,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.17123375973163968,rbf,True,True
+SR-ARE,SVM,0.8105005752324678,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+SR-ATAD5,SVM,0.8398996689205038,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+SR-HSE,SVM,0.7754022444778949,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+SR-MMP,SVM,0.8851667032874774,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True
+SR-p53,SVM,0.8461136376630873,2.5378155082656626,balanced,,,,,-1,,,,,,0.001,0,,False,200.0,0.0,ovr,3.0,0.06796578090758153,rbf,True,True

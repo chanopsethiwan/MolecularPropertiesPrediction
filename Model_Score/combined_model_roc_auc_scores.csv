@@ -1,0 +1,49 @@
+Target,Model,ROC_AUC
+NR-AR,Random Forest,0.8038
+NR-AR,XGBoost,0.8044
+NR-AR-LBD,Random Forest,0.8655
+NR-AR-LBD,XGBoost,0.8558
+NR-AhR,Random Forest,0.8964
+NR-AhR,XGBoost,0.8905
+NR-Aromatase,Random Forest,0.8171
+NR-Aromatase,XGBoost,0.8069
+NR-ER,Random Forest,0.7229
+NR-ER,XGBoost,0.7172
+NR-ER-LBD,Random Forest,0.8144
+NR-ER-LBD,XGBoost,0.7914
+NR-PPAR-gamma,Random Forest,0.8267
+NR-PPAR-gamma,XGBoost,0.786
+SR-ARE,Random Forest,0.8092
+SR-ARE,XGBoost,0.7802
+SR-ATAD5,Random Forest,0.8395
+SR-ATAD5,XGBoost,0.8199
+SR-HSE,Random Forest,0.7774
+SR-HSE,XGBoost,0.7552
+SR-MMP,Random Forest,0.8806
+SR-MMP,XGBoost,0.873
+SR-p53,Random Forest,0.8379
+SR-p53,XGBoost,0.8166
+NR-AR,LogisticRegression,0.7972
+NR-AR-LBD,LogisticRegression,0.8517
+NR-AhR,LogisticRegression,0.8803
+NR-Aromatase,LogisticRegression,0.8199
+NR-ER,LogisticRegression,0.7186
+NR-ER-LBD,LogisticRegression,0.7914
+NR-PPAR-gamma,LogisticRegression,0.7759
+SR-ARE,LogisticRegression,0.7653
+SR-ATAD5,LogisticRegression,0.8214
+SR-HSE,LogisticRegression,0.7451
+SR-MMP,LogisticRegression,0.8639
+SR-p53,LogisticRegression,0.809
+NR-AR,SVM,0.8023
+NR-AR-LBD,SVM,0.8743
+NR-AhR,SVM,0.8922
+NR-Aromatase,SVM,0.8246
+NR-ER,SVM,0.722
+NR-ER-LBD,SVM,0.8049
+NR-PPAR-gamma,SVM,0.8265
+SR-ARE,SVM,0.8105
+SR-ATAD5,SVM,0.8399
+SR-HSE,SVM,0.7754
+SR-MMP,SVM,0.8852
+SR-p53,SVM,0.8461

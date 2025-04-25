@@ -1,0 +1,35 @@
+Failure # 1 (occurred at 2025-04-23_22-42-28)
+[36mray::_Inner.train()[39m (pid=44355, ip=127.0.0.1, actor_id=ed3a08e23b37cfa09e221f8b01000000, repr=TorchTrainer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/ray/tune/trainable/trainable.py", line 330, in train
+    raise skipped from exception_cause(skipped)
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/ray/train/_internal/utils.py", line 57, in check_for_failure
+    ray.get(object_ref)
+           ^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ray.exceptions.RayTaskError(ValueError): [36mray::_RayTrainWorker__execute.get_next()[39m (pid=44360, ip=127.0.0.1, actor_id=cef3f670e249574f1f5f952601000000, repr=<ray.train._internal.worker_group.RayTrainWorker object at 0x1079a7bc0>)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/ray/train/_internal/worker_group.py", line 33, in __execute
+    raise skipped from exception_cause(skipped)
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/ray/train/_internal/utils.py", line 176, in discard_return_wrapper
+    train_func(*args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/chemprop/cli/hpopt.py", line 391, in <lambda>
+    lambda config: train_model(
+                   ^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/chemprop/cli/hpopt.py", line 330, in train_model
+    trainer = pl.Trainer(
+              ^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/lightning/pytorch/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 404, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/accelerator_connector.py", line 131, in __init__
+    self._check_config_and_set_final_flags(
+  File "/opt/homebrew/Caskroom/miniforge/base/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/accelerator_connector.py", line 219, in _check_config_and_set_final_flags
+    raise ValueError(
+ValueError: You set `strategy=<ray.train.lightning._lightning_utils.RayDDPStrategy object at 0x15e855df0>` but strategies from the DDP family are not supported on the MPS accelerator. Either explicitly set `accelerator='cpu'` or change the strategy.

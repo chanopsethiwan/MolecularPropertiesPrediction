@@ -1,0 +1,11 @@
+{
+  "train_loop_config": {
+    "depth": 5,
+    "ffn_num_layers": 2,
+    "final_lr_ratio": 0.8126327936140155,
+    "init_lr_ratio": 0.2975821533065482,
+    "max_lr": 0.0015222887277698963,
+    "message_hidden_dim": 400,
+    "warmup_epochs": 12
+  }
+}

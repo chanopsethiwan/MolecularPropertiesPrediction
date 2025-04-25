@@ -1,0 +1,20 @@
+data_path: tox21.csv
+dataset_type: classification
+save_dir: tox21_opt_model
+target_columns:
+  - NR-AR
+  - NR-AR-LBD
+  - NR-AhR
+  - NR-Aromatase
+  - NR-ER
+  - NR-ER-LBD
+  - NR-PPAR-gamma
+  - SR-ARE
+  - SR-ATAD5
+  - SR-HSE
+  - SR-MMP
+  - SR-p53
+metric: roc
+split_type: scaffold
+num_iters: 20
+config_save_path: best_hyperparams.json
